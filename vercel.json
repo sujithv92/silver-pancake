@@ -1,0 +1,26 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "functions": {
+    "app/api/proxy/[provider]/[...path]/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/v1/chat/completions/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/v1/messages/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/v1/embeddings/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/v1/completions/route.ts": {
+      "maxDuration": 60
+    }
+  },
+  "regions": ["iad1"],
+  "github": {
+    "silent": true
+  }
+}
